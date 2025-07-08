@@ -1,0 +1,33 @@
+{
+  "name": "f3-multi-region",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
+  },
+  "dependencies": {
+    "@iconify-json/lucide": "^1.2.54",
+    "@iconify-json/simple-icons": "^1.2.41",
+    "@nuxt/content": "3.6.3",
+    "@nuxt/fonts": "0.11.4",
+    "@nuxt/icon": "1.15.0",
+    "@nuxt/image": "1.10.0",
+    "@nuxt/scripts": "0.11.9",
+    "@nuxt/test-utils": "3.19.2",
+    "@nuxt/ui": "^3.2.0",
+    "@unhead/vue": "^2.0.3",
+    "nuxt": "^3.17.6"
+  },
+  "devDependencies": {
+    "@nuxt/eslint": "^1.4.1",
+    "eslint": "^9.30.0",
+    "typescript": "^5.8.3"
+  },
+  "packageManager": "pnpm@10.12.4+sha512.5ea8b0deed94ed68691c9bad4c955492705c5eeb8a87ef86bc62c74a26b037b08ff9570f108b2e4dbd1dd1a9186fea925e527f141c648e85af45631074680184"
+}

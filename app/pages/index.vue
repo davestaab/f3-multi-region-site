@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col items-center justify-center gap-4 h-screen">
     <h1 class="font-bold text-2xl text-(--ui-primary)">
-      F3 {{ $config.public.tenant }}
+      F3 {{ tenant.name }}
     </h1>
 
     <div class="flex items-center gap-2">
@@ -23,3 +23,6 @@
     </div>
   </div>
 </template>
+<script setup lang="ts">
+const tenant = useTenant();
+</script>

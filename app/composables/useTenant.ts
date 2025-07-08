@@ -1,18 +1,8 @@
+import { tenants } from '~/utils/tenants/types';
+import type { TenantId } from '~/utils/tenants/types';
+
 export const useTenant = () => {
-  const tenantId = useRuntimeConfig().public.tenant
+  const tenantId = useRuntimeConfig().public.tenant as TenantId;
 
-  const tenantConfigs = {
-    acme: {
-      name: 'Acme Corp',
-      color: 'red',
-      logo: '/logos/acme.png',
-    },
-    globex: {
-      name: 'Globex Inc',
-      color: 'blue',
-      logo: '/logos/globex.png',
-    }
-  }
-
-  return tenantConfigs[tenantId] || tenantConfigs['default']
+  return tenants[tenantId] || tenants['knoxville']
 }

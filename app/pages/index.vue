@@ -20,7 +20,7 @@
         </ul>
       </section>
 
-      <section class="bg-black text-(--ui-color-secondary-500) px-4 py-8 text-center text-3xl">
+      <section class="bg-(--ui-color-primary-950) text-(--ui-color-secondary-500) px-4 py-8 text-center text-3xl">
         Leave no man behind, and leave no man where you find him.
       </section>
     </main>

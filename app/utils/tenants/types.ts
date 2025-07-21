@@ -6,7 +6,8 @@ export type TenantId = 'knoxville' | 'anderson' | 'test';
 
 export interface TenantConfig {
   name: string
-  logo: string
+  logo?: string,
+  headerImages?: string[],
 }
 
 export const tenants: Record<TenantId, TenantConfig> = {

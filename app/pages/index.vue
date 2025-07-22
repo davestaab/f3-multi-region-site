@@ -1,3 +1,11 @@
+<script setup lang="ts">
+import { useTenant } from '@/composables/useTenant';
+const tenant = useTenant();
+const headerImage = computed(() => {
+  const i = Math.floor(Math.random() * (tenant.headerImages?.length ?? 0));
+  return tenant.headerImages?.length ? tenant.headerImages[i] : 'images/cropped-139.jpeg';
+})
+</script>
 <template>
   <main class="w-full max-w-(--ui-container) mx-auto bg-white">
     <img :src="headerImage" class="w-full" alt="F3 Header Image">
@@ -38,11 +46,4 @@
     </section>
     </main >
 </template>
-<script setup lang="ts">
-import { useTenant } from '@/composables/useTenant';
-const tenant = useTenant();
-const headerImage = computed(() => {
-  const i = Math.floor(Math.random() * (tenant.headerImages?.length ?? 0));
-  return tenant.headerImages?.length ? tenant.headerImages[i] : 'images/cropped-139.jpeg';
-})
-</script>
+

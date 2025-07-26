@@ -1,16 +1,20 @@
 import knoxville from './knoxville';
-import anderson from './anderson';
+import clinchValley from './clinchValley';
 import test from './test';
 
-export type TenantId = 'knoxville' | 'anderson' | 'test';
+export type TenantId = 'knoxville' | 'clinchValley' | 'test';
 export interface AO {
   name: string;
   slug: string;
   locationName: string;
   locationDescription: string;
-  dayTimeLabel: string;
-  aoq:string;
+  events: Event[];
+  aoq: string;
   mapUrl: string;
+}
+interface Event {
+  type: string;
+  description: string;
 }
 export interface TenantConfig {
   name: string
@@ -21,6 +25,6 @@ export interface TenantConfig {
 
 export const tenants: Record<TenantId, TenantConfig> = {
   knoxville,
-  anderson,
+  clinchValley,
   test
 }

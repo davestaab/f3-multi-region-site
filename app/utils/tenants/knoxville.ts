@@ -1,3 +1,4 @@
+import { AOs } from "./knoxville/aos";
 import type { TenantConfig } from "./types"
 
 const config: TenantConfig = {
@@ -23,17 +24,7 @@ const config: TenantConfig = {
     '/images/cropped-tunneloflove-scaled-1.jpg',
     '/images/cropped-Volunteers-scaled-1.jpg',
   ],
-  AOs:[
-    {
-      name: 'JUCO',
-      slug: 'juco',
-      locationName: 'Pellissippi CC',
-      locationDescription: 'First parking lot on right, from Hardin Valley Rd.',
-      dayTimeLabel: 'Monday, Wednesday, Friday 5:30 - 6:15 AM',
-      aoq: 'Mailbox',
-      mapUrl: 'https://map.f3nation.com/?eventId=33881&locationId=33897'
-    },
-  ]
+  AOs,
 }
 
 export default config;

@@ -4,11 +4,12 @@ const route = useRoute();
 const ao = tenant.AOs.find(a => a.slug === route.params.slug);
 const headerImage = computed(() => {
   const i = Math.floor(Math.random() * (tenant.headerImages?.length ?? 0));
-  return tenant.headerImages?.length ? tenant.headerImages[i] : 'images/cropped-139.jpeg';
+  return tenant.headerImages?.length ? tenant.headerImages[i] : '/images/cropped-139.jpeg';
 })
+const eventsHeader = ao?.events.map(e => `${e.type}: ${e.description}`).join(' and ') || 'No events scheduled';
 useSeoMeta({
-  title: `${ao?.name} - ${tenant.name}`,
-  description: `${ao?.dayTimeLabel} at ${ao?.locationName}`,
+  title: `${ao?.name} - F3 ${tenant.name}`,
+  description: `${eventsHeader} at ${ao?.locationName}`,
 })
 </script>
 
@@ -19,8 +20,11 @@ useSeoMeta({
       <section class="flex flex-col gap-4">
         <h2 class="text-2xl font-semibold text-(--ui-secondary)">{{  ao?.name }}</h2>
         <p>
-          <strong>Location:</strong> {{ ao?.locationName }}<br>
-          {{ ao?.locationDescription }}<br>
+          <strong>Location:</strong> {{ ao?.locationName }}<br><br>
+          <template v-for="event in ao?.events" :key="event.description">
+            <strong>{{ event.type }}</strong>
+            {{ event.description }} <br>
+          </template>
         </p>
         <p>
           <strong>AOQ:</strong> {{ ao?.aoq }}

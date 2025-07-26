@@ -3,7 +3,7 @@ import { useTenant } from '@/composables/useTenant';
 const tenant = useTenant();
 const headerImage = computed(() => {
   const i = Math.floor(Math.random() * (tenant.headerImages?.length ?? 0));
-  return tenant.headerImages?.length ? tenant.headerImages[i] : 'images/cropped-139.jpeg';
+  return tenant.headerImages?.length ? tenant.headerImages[i] : '/images/cropped-139.jpeg';
 })
 </script>
 <template>

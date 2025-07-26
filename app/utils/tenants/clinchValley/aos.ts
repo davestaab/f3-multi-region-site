@@ -56,4 +56,4 @@ const theProjectVLS: AO = {
   mapUrl: 'https://map.f3nation.com/?eventId=50119&locationId=50060',
 };
 
-export const AOs: AO[] = [theProject, lostPearls, theBrickYard, theProjectVLS];
+export const AOs: AO[] = [theProject, theProjectVLS, theBrickYard, lostPearls];

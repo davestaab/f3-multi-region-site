@@ -22,7 +22,7 @@ useSeoMeta({
         <p>
           <strong>Location:</strong> {{ ao?.locationName }}<br><br>
           <template v-for="event in ao?.events" :key="event.description">
-            <strong>{{ event.type }}</strong>
+            <strong>{{ event.type }}:</strong>
             {{ event.description }} <br>
           </template>
         </p>

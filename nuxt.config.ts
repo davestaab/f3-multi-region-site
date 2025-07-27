@@ -18,9 +18,15 @@ export default defineNuxtConfig({
   future: {
     compatibilityVersion: 4
   },
+  nitro: {
+    preset: 'static',
+    externals: {
+      external: ['better-sqlite3']
+    }
+  },
 
   compatibilityDate: '2024-11-27',
-  
+
   runtimeConfig: {
     public: {
       tenant: process.env.TENANT || 'knoxville'

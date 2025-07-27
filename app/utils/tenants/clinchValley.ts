@@ -1,9 +1,10 @@
-import { AOs } from "./knoxville/aos";
+import { AOs } from "./clinchValley/aos";
 import type { TenantConfig } from "./types"
 
 const config: TenantConfig = {
-  name: 'Knoxville',
+  name: 'Clinch Valley',
   logo: '/logos/knoxville.png',
+  AOs,
   headerImages: [
     '/images/cropped-139.jpeg',
     '/images/cropped-1500x500.jpg',
@@ -24,7 +25,6 @@ const config: TenantConfig = {
     '/images/cropped-tunneloflove-scaled-1.jpg',
     '/images/cropped-Volunteers-scaled-1.jpg',
   ],
-  AOs,
 }
 
 export default config;

@@ -1,3 +1,11 @@
+<script setup lang="ts">
+import { useTenant } from '@/composables/useTenant';
+const tenant = useTenant();
+const headerImage = computed(() => {
+  const i = Math.floor(Math.random() * (tenant.headerImages?.length ?? 0));
+  return tenant.headerImages?.length ? tenant.headerImages[i] : '/images/cropped-139.jpeg';
+})
+</script>
 <template>
   <main class="w-full max-w-(--ui-container) mx-auto bg-white">
     <img :src="headerImage" class="w-full" alt="F3 Header Image">
@@ -13,7 +21,7 @@
         <h2 class="text-2xl font-semibold text-(--ui-secondary)">Our Workouts:</h2>
         <ul class="list-disc list-inside space-y-2 text-lg">
           <li>Are <strong>free of charge</strong></li>
-          <li>Are <strong>open to all men</strong> (<a class="hover:underline text-secondary" href="https://fiaknoxville.com/">FiA</a> is a similar organization for women)</li>
+          <li>Are <strong>open to all men</strong> (<a class="hover:underline text-secondary" href="https://fiaknoxville.com/" target="_blank">FiA</a> is a similar organization for women)</li>
           <li>Are <strong>held outdoors</strong>, rain or shine, heat or cold</li>
           <li>Are <strong>led by men</strong> who participate in the workout in a rotating fashion, with no training or certification necessary</li>
           <li>End with a <strong>Circle of Trust</strong></li>
@@ -38,11 +46,4 @@
     </section>
     </main >
 </template>
-<script setup lang="ts">
-import { useTenant } from '@/composables/useTenant';
-const tenant = useTenant();
-const headerImage = computed(() => {
-  const i = Math.floor(Math.random() * (tenant.headerImages?.length ?? 0));
-  return tenant.headerImages?.length ? tenant.headerImages[i] : 'images/cropped-139.jpeg';
-})
-</script>
+

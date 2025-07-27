@@ -1,15 +1,40 @@
 <script lang="ts" setup>
+import type { NavigationMenuChildItem, NavigationMenuItem } from '@nuxt/ui';
 import TheHeader from './components/TheHeader.vue';
 import { useTenant } from '@/composables/useTenant';
+import type { AO } from './utils/tenants/types';
 const tenant = useTenant();
+const items: NavigationMenuItem[] = [
+  {
+    label: 'Home',
+    to: '/',
+  },
+  {
+    label: 'Free Workout Locations',
+    children: tenant.AOs.map(createMenu),
+  }
+];
+function createMenu(ao: AO): NavigationMenuChildItem {
+  return {
+    label: ao.name,
+    to: `/aos/${ao.slug}`,
+  }
+}
 </script>
 <template>
   <UApp>
     <div class="bg-(--ui-color-primary-200)">
       <the-header />
+      <UNavigationMenu
+        variant="link"
+        :items="items"
+        class="w-full max-w-(--ui-container) justify-start mx-auto bg-white" 
+        />
       <NuxtPage />
-      <footer class="bg-(--ui-color-primary-950) text-(--ui-color-secondary-500) w-full p-4 text-sm">
-        <p>&copy; 2025 F3 {{ tenant.name }}.</p>
+      <footer class="bg-(--ui-color-primary-700) text-white w-full p-4 text-sm">
+        <div class="w-full max-w-(--ui-container) mx-auto flex">
+          <p>&copy; 2025 F3 {{ tenant.name }}</p>
+        </div>
       </footer>
     </div>
   </UApp>

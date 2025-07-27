@@ -3,7 +3,6 @@ import type { NavigationMenuChildItem, NavigationMenuItem } from '@nuxt/ui';
 import TheHeader from './components/TheHeader.vue';
 import { useTenant } from '@/composables/useTenant';
 import type { AO } from './utils/tenants/types';
-import type { baseURL } from 'process';
 const tenant = useTenant();
 const items: NavigationMenuItem[] = [
   {
@@ -28,11 +27,14 @@ function createMenu(ao: AO): NavigationMenuChildItem {
       <the-header />
       <UNavigationMenu
         variant="link"
-        :items="items" class="w-full max-w-(--ui-container) justify-start mx-auto bg-white" 
+        :items="items"
+        class="w-full max-w-(--ui-container) justify-start mx-auto bg-white" 
         />
       <NuxtPage />
       <footer class="bg-(--ui-color-primary-700) text-white w-full p-4 text-sm">
-        <p>&copy; 2025 F3 {{ tenant.name }}.</p>
+        <div class="w-full max-w-(--ui-container) mx-auto flex">
+          <p>&copy; 2025 F3 {{ tenant.name }}</p>
+        </div>
       </footer>
     </div>
   </UApp>

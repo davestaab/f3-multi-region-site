@@ -5,7 +5,6 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/ui',
     '@nuxt/eslint',
-    '@nuxt/content',
     '@nuxt/icon',
     '@nuxt/image',
     '@nuxt/scripts',
@@ -20,9 +19,6 @@ export default defineNuxtConfig({
   },
   nitro: {
     preset: 'static',
-    externals: {
-      external: ['better-sqlite3']
-    }
   },
 
   compatibilityDate: '2024-11-27',

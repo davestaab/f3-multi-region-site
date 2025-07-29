@@ -20,7 +20,6 @@
   "dependencies": {
     "@iconify-json/lucide": "^1.2.54",
     "@iconify-json/simple-icons": "^1.2.41",
-    "@nuxt/content": "3.6.3",
     "@nuxt/fonts": "0.11.4",
     "@nuxt/icon": "1.15.0",
     "@nuxt/image": "1.10.0",

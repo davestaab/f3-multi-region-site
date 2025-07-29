@@ -1,9 +1,14 @@
 Feature: Landing Page
 
-  Scenario: Should have the region title
+  Scenario: Displays the region title
     Given I am on the landing page
-    Then I should see the text "Test Tenant"
+    Then I see a heading with the text "Test Tenant"
 
-  Scenario: Should have landing page content
+
+  Scenario: Displays key landing page content
     Given I am on the landing page
-    Then I should see the text "What is F3?"
+    Then I see the text "Our Mission"
+    And I see the text "Our Workouts"
+    And I see the text "What to Expect"
+    And I see the text "Workouts near you"
+    And I see the text "Leave no man behind, and leave no man where you find him."

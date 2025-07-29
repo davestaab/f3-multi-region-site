@@ -3,27 +3,13 @@ import type { TenantConfig } from "./types"
 
 const config: TenantConfig = {
   name: 'Clinch Valley',
-  logo: '/logos/knoxville.png',
+  logo: '/images/clinch-valley/clinch_valley_logo.png',
   AOs,
   headerImages: [
-    '/images/cropped-139.jpeg',
-    '/images/cropped-1500x500.jpg',
-    '/images/cropped-9990.jpeg',
-    '/images/cropped-9999.jpg',
-    '/images/cropped-10000.jpeg',
-    '/images/cropped-10061.jpeg',
-    '/images/cropped-Asylumn-scaled-1.jpg',
-    '/images/cropped-BOM2-scaled-1.jpg',
-    '/images/cropped-BOMCircle-scaled-1.jpg',
-    '/images/cropped-dauber-scaled-1.jpg',
-    '/images/cropped-dogpound-scaled-1.jpg',
-    '/images/cropped-everybody-scaled-1.jpg',
-    '/images/cropped-HIMS-Copy-scaled-1.jpg',
-    '/images/cropped-IMG_3723.jpg',
-    '/images/cropped-juco-scaled-1.jpg',
-    '/images/cropped-therun-scaled-2.jpg',
-    '/images/cropped-tunneloflove-scaled-1.jpg',
-    '/images/cropped-Volunteers-scaled-1.jpg',
+    '/images/clinch-valley/cv_launch_convergence_cropped.jpg',
+    '/images/clinch-valley/cv_1_cropped.jpg',
+    '/images/clinch-valley/cv_2_cropped.jpg',
+    '/images/clinch-valley/cv_3_cropped.jpg',
   ],
 }
 

@@ -3,7 +3,6 @@ import type { TenantConfig } from "./types"
 
 const config: TenantConfig = {
   name: 'Knoxville',
-  logo: '/logos/knoxville.png',
   headerImages: [
     '/images/cropped-139.jpeg',
     '/images/cropped-1500x500.jpg',

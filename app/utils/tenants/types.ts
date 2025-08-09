@@ -1,6 +1,3 @@
-import knoxville from './knoxville';
-import clinchValley from './clinchValley';
-import test from './test';
 
 export type TenantId = 'knoxville' | 'clinchValley' | 'test';
 export interface AO {
@@ -21,10 +18,4 @@ export interface TenantConfig {
   logo?: string,
   headerImages?: string[],
   AOs: AO[],
-}
-
-export const tenants: Record<TenantId, TenantConfig> = {
-  knoxville,
-  clinchValley,
-  test
 }

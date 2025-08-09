@@ -1,4 +1,4 @@
-import { tenants } from '~/utils/tenants/types';
+import { tenants } from '~/utils/tenants';
 import type { TenantId } from '~/utils/tenants/types';
 
 export const useTenant = () => {

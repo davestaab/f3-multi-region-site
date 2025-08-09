@@ -1,5 +1,5 @@
-import { AOs } from "./clinchValley/aos";
-import type { TenantConfig } from "./types"
+import { AOs } from "./aos";
+import type { TenantConfig } from "../types"
 
 const config: TenantConfig = {
   name: 'Clinch Valley',

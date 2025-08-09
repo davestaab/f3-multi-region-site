@@ -4,7 +4,7 @@ const config: TenantConfig = {
   name: 'Test Tenant',
   AOs: [
     {
-      name: 'Test',
+      name: 'Test AO',
       slug: 'test',
       aoq: 'tester',
       events: [{

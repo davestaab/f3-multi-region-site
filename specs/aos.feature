@@ -5,7 +5,20 @@ Feature: Individual AO Page
 
   Scenario: Display navigational menus
     Given I am on the landing page
-  
+    Then I see the menu "Home"
+    And I see the menu "Free Workout Locations"
+    Then I do not see the menu "Test AO"
+    When I click on the menu "Free Workout Locations"
+    Then I see the menu "Test AO"
+    
+  Scenario: Navigation menus work
+    Given I am on the landing page
+    When I click on the menu "Free Workout Locations"
+    And I click on the menu "Test AO"
+    Then I see the text "Test AO"
+    When I click on the menu "Home"
+    Then I see the text "Our Mission"
+
   Scenario: Display details for an AO
     # name
     # locationName

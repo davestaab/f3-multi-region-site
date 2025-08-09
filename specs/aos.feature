@@ -4,7 +4,8 @@ Feature: Individual AO Page
   So that I can learn more about its location, schedule, and leadership
 
   Scenario: Display navigational menus
-
+    Given I am on the landing page
+  
   Scenario: Display details for an AO
     # name
     # locationName

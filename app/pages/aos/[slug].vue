@@ -2,6 +2,12 @@
 const tenant = useTenant();
 const route = useRoute();
 const ao = tenant.AOs.find(a => a.slug === route.params.slug);
+if(!ao){
+  throw createError({
+    statusCode: 404,
+    statusMessage: 'AO not found'
+  })
+}
 const headerImage = computed(() => {
   const i = Math.floor(Math.random() * (tenant.headerImages?.length ?? 0));
   return tenant.headerImages?.length ? tenant.headerImages[i] : '/images/cropped-139.jpeg';

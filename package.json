@@ -14,7 +14,7 @@
     "typecheck": "nuxt typecheck",
     "generate:knoxville": "TENANT=knoxville nuxt generate",
     "generate:clinchValley": "TENANT=clinchValley nuxt generate",
-    "generate:roco": "TENANT=roco nuxt generate",
+    "generate:test": "TENANT=test nuxt generate",
     "test": "TENANT=test pnpm bddgen && pnpm exec playwright test"
   },
   "dependencies": {

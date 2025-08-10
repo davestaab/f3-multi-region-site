@@ -10,7 +10,7 @@ const theProject: AO = {
     type: 'Bootcamp',
     description: 'Tuesday, Thursday 05: 30-06: 15am',
   }],
-  aoq: 'Ocho',
+  aoq: 'Tom Tom',
   mapUrl: 'https://map.f3nation.com/?eventId=33874&locationId=33874',
 }
 const lostPearls: AO = {

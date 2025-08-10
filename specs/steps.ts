@@ -14,8 +14,9 @@ When('I click on the menu {string}', async ({ page }, menuText) => {
   await page.getByRole('navigation').getByText(menuText).click();
 });
 
-Then('I see the text {string}', async ({ page }, text) => {
-  await expect(page.getByText(text)).toBeVisible();
+Then(/I (do not )?see the text "(.+)"/, async ({ page }, negativeKeyword, text) => {
+  const visible = !negativeKeyword;
+  await expect(page.getByText(text)).toBeVisible({ visible });
 });
 
 Then('I see a heading containing {string}', async ({ page }, text) => {
@@ -25,4 +26,13 @@ Then('I see a heading containing {string}', async ({ page }, text) => {
 Then(/I (do not )?see the menu "(.+)"/, async ({ page }, negativeKeyword, menuText) => {
   const visible = !negativeKeyword;
   await expect(page.getByRole('navigation').getByText(menuText)).toBeVisible({ visible });
+});
+
+Then('I see the image with alt text {string}', async ({ page }, altText) => {
+  await expect(page.getByRole('img', { name: altText })).toBeVisible();
+});
+
+Then(/I (do not )?see the element titled "(.+)"/, async ({ page }, negativeKeyword, title) => {
+  const visible = !negativeKeyword;
+  await expect(page.getByTitle(title)).toBeVisible({ visible });
 });

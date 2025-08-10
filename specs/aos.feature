@@ -10,7 +10,7 @@ Feature: Individual AO Page
     Then I do not see the menu "Test AO"
     When I click on the menu "Free Workout Locations"
     Then I see the menu "Test AO"
-    
+
   Scenario: Navigation menus work
     Given I am on the landing page
     When I click on the menu "Free Workout Locations"
@@ -20,12 +20,21 @@ Feature: Individual AO Page
     Then I see the text "Our Mission"
 
   Scenario: Display details for an AO
-    # name
-    # locationName
-    # locationDescription
-    # meeting day/time
-    # map
-    # AOQ
+    Given I am on the AO page with slug "test"
+    Then I see the text "Test AO"
+    And I see the text "Bootcamp:  Monday, Wednesday, Friday 5:30 - 6:15 AM"
+    And I see the text "AOQ: Tester"
+    And I see the text "Location: The Ao Location"
+    And I see the text "In the obvious spot"
+    And I see the element titled "Location Description"
+    And I see the text "Map"
+    And I see the element titled "AO Map"
+
+  Scenario: AO location description is optional
+    Given I am on the AO page with slug "no-description"
+    Then I see the text "AO without location description"
+    And I see the text "Location: The Ao Location"
+    And I do not see the element titled "Location Description"
 
   Scenario: Display not found page for bad slug
     Given I am on the AO page with slug "nonexisting-ao"

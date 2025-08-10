@@ -4,7 +4,7 @@ export interface AO {
   name: string;
   slug: string;
   locationName: string;
-  locationDescription: string;
+  locationDescription?: string;
   events: Event[];
   aoq: string;
   mapUrl: string;

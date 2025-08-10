@@ -26,7 +26,9 @@ useSeoMeta({
       <section class="flex flex-col gap-4">
         <h2 class="text-2xl font-semibold text-(--ui-secondary)">{{  ao?.name }}</h2>
         <p>
-          <strong>Location:</strong> {{ ao?.locationName }}<br><br>
+          <strong>Location:</strong> {{ ao?.locationName }}<br>
+          <span v-if="ao.locationDescription" title="Location Description">{{ ao?.locationDescription }}<br></span>
+          <br>
           <template v-for="event in ao?.events" :key="event.description">
             <strong>{{ event.type }}:</strong>
             {{ event.description }} <br>
@@ -36,7 +38,7 @@ useSeoMeta({
           <strong>AOQ:</strong> {{ ao?.aoq }}
         </p>
         <h2 class="text-2xl font-semibold text-(--ui-secondary)">Map</h2>
-        <iframe v-if="ao?.mapUrl" class="w-full aspect-3/4 md:aspect-video max-w-6xl self-center" loading="lazy" :src="ao?.mapUrl" frameborder="0" />
+        <iframe v-if="ao?.mapUrl" title="AO Map" class="w-full aspect-3/4 md:aspect-video max-w-6xl self-center" loading="lazy" :src="ao?.mapUrl" frameborder="0" />
       </section>
     </section>
   </main>

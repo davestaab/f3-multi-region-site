@@ -16,3 +16,5 @@ Feature: Landing Page
     And I see the text "Leave no man behind, and leave no man where you find him."
 
   Scenario: Display the group image
+    Given I am on the landing page
+    Then I see the image with alt text "F3 Header Image"

@@ -18,7 +18,7 @@ jobs:
     - name: Type Check
       run: pnpm typecheck
     - name: Install Playwright Browsers
-      run: pnpm exec playwright install --with-deps
+      run: pnpm exec playwright install --with-deps chromium
     - name: Run Playwright tests
       run: pnpm test
     - uses: actions/upload-artifact@v4

@@ -18,4 +18,16 @@ export interface TenantConfig {
   logo?: string,
   headerImages?: string[],
   AOs: AO[],
+  Links: Link[],
+}
+
+export enum LinkType {
+  Social,
+  Page
+}
+interface Link {
+  name: string;
+  url: string;
+  type: LinkType;
+  icon?: string;
 }

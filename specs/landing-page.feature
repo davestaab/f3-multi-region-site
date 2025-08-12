@@ -18,3 +18,9 @@ Feature: Landing Page
   Scenario: Display the group image
     Given I am on the landing page
     Then I see the image with alt text "F3 Header Image"
+
+  Scenario: Display social media links
+    Given I am on the landing page
+    Then I see a link to "Facebook"
+    And I see a link to "X"
+    And I see a link to "Instagram"

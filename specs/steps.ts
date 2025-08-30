@@ -36,3 +36,17 @@ Then(/I (do not )?see the element titled "(.+)"/, async ({ page }, negativeKeywo
   const visible = !negativeKeyword;
   await expect(page.getByTitle(title)).toBeVisible({ visible });
 });
+
+Then('I see a link to {string}', async ({ page }, linkText) => {
+  const link = page.getByRole('link', { name: linkText });
+  await expect(link).toBeVisible();
+  await expect(link).toHaveAttribute('href', expect.stringContaining(getSocialMediaLink(linkText)));
+});
+
+function getSocialMediaLink(linkText: string) {
+  return linkText === 'Twitter' ?
+    'https://x.com' :
+    linkText === 'Facebook' ?
+      'https://www.facebook.com' :
+      'https://www.instagram.com';
+}

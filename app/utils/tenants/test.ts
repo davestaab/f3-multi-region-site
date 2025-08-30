@@ -1,10 +1,30 @@
-import type { AO, TenantConfig } from "./types"
+import { LinkType, type AO, type TenantConfig } from "./types"
 
 const config: TenantConfig = {
   name: 'Test Tenant',
   AOs: [
     createAO(),
     createAO({ slug: 'no-description', locationDescription: undefined, name: 'AO without location description' }),
+  ],
+  Links: [
+    {
+      name: 'Facebook',
+      url: 'https://www.facebook.com',
+      type: LinkType.Social,
+      icon: 'i-lucide-facebook',
+    },
+    {
+      name: 'Instagram',
+      url: 'https://www.instagram.com',
+      type: LinkType.Social,
+      icon: 'i-lucide-instagram',
+    },
+    {
+      name: 'Twitter',
+      url: 'https://x.com',
+      type: LinkType.Social,
+      icon: 'i-lucide-twitter',
+    },
   ]
 }
 

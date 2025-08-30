@@ -24,6 +24,9 @@ const config: TenantConfig = {
     '/images/cropped-Volunteers-scaled-1.jpg',
   ],
   AOs,
+  Links: [
+
+  ]
 }
 
 export default config;

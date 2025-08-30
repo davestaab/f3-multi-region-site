@@ -44,7 +44,7 @@ Then('I see a link to {string}', async ({ page }, linkText) => {
 });
 
 function getSocialMediaLink(linkText: string) {
-  return linkText === 'X' ?
+  return linkText === 'Twitter' ?
     'https://x.com' :
     linkText === 'Facebook' ?
       'https://www.facebook.com' :

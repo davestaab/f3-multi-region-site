@@ -14,15 +14,9 @@ const config: TenantConfig = {
   Links: [
     {
       name: 'Facebook',
-      url: 'https://www.facebook.com/F3ClinchValley',
+      url: 'https://www.facebook.com/people/F3-Clinch-Valley/61578397230210',
       type: LinkType.Social,
       icon: 'i-lucide-facebook',
-    },
-    {
-      name: 'X',
-      url: 'https://x.com/F3ClinchValley',
-      type: LinkType.Social,
-      icon: 'i-lucide-twitter',
     },
     {
       name: 'Instagram',

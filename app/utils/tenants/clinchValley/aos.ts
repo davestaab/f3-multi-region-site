@@ -47,7 +47,7 @@ const theProjectVLS: AO = {
   name: 'The Project VLS',
   slug: 'the-project-vls',
   locationName: 'Melton Lake Park',
-  locationDescription: 'Meet at the pavilion',
+  locationDescription: 'Meet at the pavilion. Peer led discussion only, no workout.',
   events: [{
     type: 'Virtuous Leadership School',
     description: 'Wednesday 5:00AM - 6:00AM',

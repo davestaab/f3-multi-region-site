@@ -29,3 +29,5 @@ logs
 /blob-report/
 /playwright/.cache/
 .features-gen/
+# Local Netlify folder
+.netlify

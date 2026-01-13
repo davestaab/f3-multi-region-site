@@ -18,24 +18,24 @@
     "test": "pnpm playwright install chromium && TENANT=test pnpm bddgen && pnpm exec playwright test"
   },
   "dependencies": {
-    "@iconify-json/lucide": "^1.2.54",
-    "@iconify-json/simple-icons": "^1.2.41",
+    "@iconify-json/lucide": "^1.2.84",
+    "@iconify-json/simple-icons": "^1.2.66",
     "@nuxt/fonts": "0.11.4",
     "@nuxt/icon": "1.15.0",
     "@nuxt/image": "1.10.0",
     "@nuxt/scripts": "0.11.9",
     "@nuxt/test-utils": "3.19.2",
-    "@nuxt/ui": "^3.2.0",
-    "@unhead/vue": "^2.0.3",
-    "nuxt": "^3.17.6"
+    "@nuxt/ui": "^3.3.7",
+    "@unhead/vue": "^2.1.2",
+    "nuxt": "^3.20.2"
   },
   "devDependencies": {
-    "@nuxt/eslint": "^1.4.1",
-    "@playwright/test": "^1.53.2",
-    "@types/node": "^24.0.10",
-    "eslint": "^9.30.0",
-    "playwright-bdd": "^8.3.1",
-    "typescript": "^5.8.3"
+    "@nuxt/eslint": "^1.12.1",
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^24.10.7",
+    "eslint": "^9.39.2",
+    "playwright-bdd": "^8.4.2",
+    "typescript": "^5.9.3"
   },
   "engines": {
     "node": ">=22.0.0"

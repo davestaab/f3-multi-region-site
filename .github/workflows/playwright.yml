@@ -24,6 +24,6 @@ jobs:
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:
-        name: playwright-report
-        path: playwright-report/
+        name: cucumber-report
+        path: cucumber-report/
         retention-days: 30

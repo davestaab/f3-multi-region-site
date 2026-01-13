@@ -1,79 +1,17 @@
 # F3 Multi Region Website
 
+## Overview
 
+This project is a multi-region static website built with Nuxt 3. A single shared codebase powers multiple region-specific sites, each with its own content, configuration, and Netlify deployment. Regions are built independently using a tenant-based build process, allowing for clear separation of content, simple deployments, and scalable growth as new regions are added.
 
-# Nuxt UI Starter
+See `app/utils/tenants` for list of current regions.
 
-Look at [Nuxt docs](https://nuxt.com/docs/getting-started/introduction) and [Nuxt UI docs](https://ui.nuxt.com) to learn more.
+## How to
 
-## Setup
+### Update info or add an AO for a region
 
-Make sure to install the dependencies:
+needs details
 
-```bash
-# npm
-npm install
+## Technical
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Details about making code changes to the site.

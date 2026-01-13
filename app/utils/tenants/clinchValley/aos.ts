@@ -1,6 +1,5 @@
 import type { AO } from "../types";
 
-
 const theProject: AO = {
   name: 'The Project',
   slug: 'the-project',
@@ -8,7 +7,7 @@ const theProject: AO = {
   locationDescription: 'Meet in Oak Ridge Civic Center parking lot at edge of Bissell Park: look for #shovelflag',
   events: [{
     type: 'Bootcamp',
-    description: 'Tuesday, Thursday 05: 30-06: 15am',
+    description: 'Tuesday, Thursday 05:30-06:15am',
   }],
   aoq: 'Tom Tom',
   mapUrl: 'https://map.f3nation.com/?eventId=33874&locationId=33874',
@@ -25,7 +24,7 @@ const lostPearls: AO = {
     type: 'Ruck',
     description: 'Friday 05:15-06:00am',
   }],
-  mapUrl: 'https://map.f3nation.com/?eventId=49950&locationId=49915',
+  mapUrl: 'https://map.f3nation.com/?locationId=50424&eventId=49950',
   aoq: 'Bail Bonds',
 };
 const theBrickYard: AO = {
@@ -41,7 +40,7 @@ const theBrickYard: AO = {
     type: 'Bootcamp',
     description: 'Saturday 06:00-07:00am',
   }],
-  mapUrl: 'https://map.f3nation.com/?eventId=33902&locationId=33902 ',
+  mapUrl: 'https://map.f3nation.com/?locationId=50423&eventId=33902',
 };
 const theProjectVLS: AO = {
   name: 'The Project VLS',
@@ -53,7 +52,7 @@ const theProjectVLS: AO = {
     description: 'Wednesday 5:00AM - 6:00AM',
   }],
   aoq: 'Baby Face',
-  mapUrl: 'https://map.f3nation.com/?eventId=50119&locationId=50060',
+  mapUrl: 'https://map.f3nation.com/?locationId=50552&eventId=50770',
 };
 
 export const AOs: AO[] = [theProject, theProjectVLS, theBrickYard, lostPearls];

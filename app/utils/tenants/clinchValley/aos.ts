@@ -10,7 +10,7 @@ const theProject: AO = {
     description: 'Tuesday, Thursday 05:30-06:15am',
   }],
   aoq: 'Tom Tom',
-  mapUrl: 'https://map.f3nation.com/?eventId=33874&locationId=33874',
+  mapUrl: 'https://map.f3nation.com/?locationId=50412&eventId=50742',
 }
 const lostPearls: AO = {
   name: 'Lost Pearls',

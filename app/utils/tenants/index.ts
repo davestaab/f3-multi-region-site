@@ -1,10 +1,10 @@
 import type { TenantConfig, TenantId } from "./types";
-import knoxville from './knoxville/knoxville';
+import westTown from './west-town/west-town';
 import clinchValley from "./clinchValley/clinchValley";
 import test from "./test";
 
 export const tenants: Record<TenantId, TenantConfig> = {
-  knoxville,
+  westTown,
   clinchValley,
   test
 }

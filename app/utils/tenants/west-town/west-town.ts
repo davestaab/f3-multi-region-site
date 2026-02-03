@@ -2,7 +2,7 @@ import { AOs } from "./aos";
 import type { TenantConfig } from "../types"
 
 const config: TenantConfig = {
-  name: 'Knoxville',
+  name: 'West Town - Pending',
   headerImages: [
     '/images/cropped-139.jpeg',
     '/images/cropped-1500x500.jpg',

@@ -1,5 +1,5 @@
 
-export type TenantId = 'knoxville' | 'clinchValley' | 'test';
+export type TenantId = 'westTown' | 'clinchValley' | 'test';
 export interface AO {
   name: string;
   slug: string;

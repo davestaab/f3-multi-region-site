@@ -5,5 +5,5 @@ export const useTenant = () => {
   const tenantId = useRuntimeConfig().public.tenant as TenantId;
   // console.log(`Using tenant: ${tenantId}`);
 
-  return tenants[tenantId] || tenants['knoxville']; // Fallback to Knoxville if tenant not found
+  return tenants[tenantId] || tenants['westKnox']; // Fallback to Knoxville if tenant not found
 }

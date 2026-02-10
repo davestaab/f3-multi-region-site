@@ -1,8 +1,9 @@
 <script lang="ts" setup>
-import type { NavigationMenuChildItem, NavigationMenuItem } from '@nuxt/ui';
+import type { NavigationMenuItem } from '@nuxt/ui';
 import TheHeader from './components/TheHeader.vue';
 import { useTenant } from '@/composables/useTenant';
-import { LinkType, type AO } from './utils/tenants/types';
+import { LinkType } from './utils/tenants/types';
+import { createMenu, sortAlphabetically } from './utils/utils';
 const tenant = useTenant();
 const items: NavigationMenuItem[] = [
   {
@@ -11,15 +12,9 @@ const items: NavigationMenuItem[] = [
   },
   {
     label: 'Free Workout Locations',
-    children: tenant.AOs.map(createMenu),
+    children: tenant.AOs.sort(sortAlphabetically(a => a.name)).map(createMenu),
   }
 ];
-function createMenu(ao: AO): NavigationMenuChildItem {
-  return {
-    label: ao.name,
-    to: `/aos/${ao.slug}`,
-  }
-}
 const social = computed(() => tenant.Links.filter(l => l.type === LinkType.Social));
 </script>
 <template>

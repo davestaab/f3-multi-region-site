@@ -19,6 +19,17 @@ Feature: Individual AO Page
     When I click on the menu "Home"
     Then I see the text "Our Mission"
 
+  Scenario: Navigaton menu is sorted alphabetically
+    Given I am on the landing page
+    When I click on the menu "Free Workout Locations"
+    Then I see the options in the menu in the following order:
+      | Home                            |
+      | Free Workout Locations          |
+      | AO without location description |
+      | Beta                            |
+      | Gamma                           |
+      | Test AO                         |
+
   Scenario: Display details for an AO
     Given I am on the AO page with slug "test"
     Then I see the text "Test AO"

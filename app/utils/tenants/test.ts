@@ -5,6 +5,8 @@ const config: TenantConfig = {
   AOs: [
     createAO(),
     createAO({ slug: 'no-description', locationDescription: undefined, name: 'AO without location description' }),
+    createAO({ slug: 'ao-b', name: 'Beta' }),
+    createAO({ slug: 'ao-c', name: 'Gamma' }),
   ],
   Links: [
     {

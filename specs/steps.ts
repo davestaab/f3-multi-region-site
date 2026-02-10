@@ -43,6 +43,12 @@ Then('I see a link to {string}', async ({ page }, linkText) => {
   await expect(link).toHaveAttribute('href', expect.stringContaining(getSocialMediaLink(linkText)));
 });
 
+Then('I see the options in the menu in the following order:', async ({ page }, dataTable) => {
+  const options = page.getByRole('navigation').getByRole('list').getByRole('listitem');
+  const expectedOptions = dataTable.raw().flat();
+  await expect(options).toHaveText(expectedOptions);
+});
+
 function getSocialMediaLink(linkText: string) {
   return linkText === 'Twitter' ?
     'https://x.com' :

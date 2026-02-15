@@ -107,5 +107,18 @@ const shamruck: AO = {
   mapUrl: 'https://map.f3nation.com/?locationId=43461&eventId=43460'
 };
 
+const deadHorse: AO = {
+  name: 'VLS Dead Horse',
+  slug: 'vls-dead-horse',
+  locationName: 'Catholic High School Pavilion',
+  locationDescription: 'Virtuous Leadership School. Peer led discussion only, no workout. Check with #vls-dead-horse on location when temps below 50°.',
+  events: [{
+    type: 'VLS',
+    description: 'Sunday 6:00 - 7:00 AM',
+  }],
+  aoq: 'Pool Boy',
+  mapUrl: 'https://map.f3nation.com/?locationId=51136&eventId=52290'
+};
 
-export const AOs = [juco, dogpound, equalizer, theFarm, thePulpit, shamrock, shamruck, rush];
+
+export const AOs = [juco, dogpound, equalizer, theFarm, thePulpit, shamrock, shamruck, rush, deadHorse];

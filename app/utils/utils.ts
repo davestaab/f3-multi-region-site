@@ -1,5 +1,5 @@
 import type { NavigationMenuChildItem } from "@nuxt/ui";
-import type { AO } from "./tenants/types";
+import type { AO } from "../tenants/types";
 
 export function createMenu(ao: AO): NavigationMenuChildItem {
   return {

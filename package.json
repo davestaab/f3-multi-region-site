@@ -12,6 +12,7 @@
     "lint:fix": "eslint --fix .",
     "typecheck": "nuxt typecheck",
     "generate:westKnox": "TENANT=westKnox nuxt generate",
+    "generate:hardKnox": "TENANT=hardKnox nuxt generate",
     "generate:clinchValley": "TENANT=clinchValley nuxt generate",
     "generate:test": "TENANT=test nuxt generate",
     "serve:test": "pnpm generate:test && pnpm preview",

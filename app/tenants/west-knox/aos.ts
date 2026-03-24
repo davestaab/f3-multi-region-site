@@ -10,7 +10,8 @@ const juco: AO = {
     description: 'Monday, Wednesday, Friday 5:30 - 6:15 AM',
   }],
   aoq: 'Mailbox',
-  mapUrl: 'https://map.f3nation.com/?eventId=33881&locationId=33897'
+  mapUrl: 'https://map.f3nation.com/?locationId=51129&eventId=33881'
+  
 };
 
 const rush: AO = {
@@ -36,7 +37,8 @@ const dogpound: AO = {
     description: 'Tuesday, Thursday 5:30 - 6:15 AM',
   }],
   aoq: 'Lightweight',
-  mapUrl: 'https://map.f3nation.com/?locationId=33893&eventId=33893'
+  mapUrl: 'https://map.f3nation.com/?locationId=33684&eventId=33684'
+  
 };
 const equalizer: AO = {
   name: 'The Equalizer',

@@ -2,7 +2,7 @@
 import type { NavigationMenuItem } from '@nuxt/ui';
 import TheHeader from './components/TheHeader.vue';
 import { useTenant } from '@/composables/useTenant';
-import { LinkType } from './utils/tenants/types';
+import { LinkType } from './tenants/types';
 import { createMenu, sortAlphabetically } from './utils/utils';
 const tenant = useTenant();
 const items: NavigationMenuItem[] = [

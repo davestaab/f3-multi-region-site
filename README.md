@@ -4,7 +4,7 @@
 
 The application operates as a multi-tenant system, where each tenant (region) has its own configuration including workout locations (AOs), events, maps, and branding. At build time, the app selects the tenant and generates a static site tailored to that region, which is then deployed to different domains or subdomains.
 
-See `app/utils/tenants` for list of current regions.
+See `app/tenants` for list of current regions.
 
 ## How to
 
@@ -59,7 +59,7 @@ This runs Playwright BDD tests.
   - `pages/`: Page components (index.vue, aos/[slug].vue)
   - `components/`: UI components (TheHeader.vue, ColorModeButton.vue)
   - `composables/`: Reusable logic (useTenant.ts)
-  - `utils/tenants/`: Tenant-specific configurations and data
+  - `tenants/`: Tenant-specific configurations and data
 - `specs/`: Cucumber feature files and step definitions
 - `server/`: Server-side utilities
 - `public/`: Static assets
